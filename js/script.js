@@ -15,7 +15,10 @@ $(window).scroll(function(){
 var materialBoxBottomMargin = $('.material-box');
 
 function materialBoxResize() {
-	if ($(window).width() >= 768) {
+	
+	// $(window).width() = 751 + scrollbar width
+
+	if ($(window).width() >= 751) {
 		$('.red-white-gradient-bg').css({
 			'height': $('.yellow-bg').height() + 30,
 		});
